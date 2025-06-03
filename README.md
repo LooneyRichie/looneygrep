@@ -36,6 +36,61 @@ cargo build --release
 ```
 
 ---
+## Debug Permission Errors
+
+zsh: permission denied: lg
+
+'''
+try using bash ~/.cargo/bin/lg
+'''
+
+or
+
+create a file to act as a wrapper script for lg in home directory
+
+'''
+nano or vim lg-wrapper.sh
+'''
+
+
+copy this and paste in file
+
+'''
+echo '#!/bin/bash
+~/.cargo/bin/lg "$@"' > ~/lg-wrapper.sh
+'''
+
+save and exit
+
+copy this and paste in terminal to make executable
+
+'''
+chmod +x ~/lg-wrapper.sh
+'''
+
+next, open .zshrc for editing
+
+'''
+nano or vim ~/.zshrc
+'''
+
+copy this and paste on the very bottom or on any availabe line
+
+'''
+alias lg='bash ~/.cargo/bin/lg'
+'''
+
+save and exit
+
+finally copy this and paste to apply the changes immediately
+
+'''
+zsh
+source ~/.zshrc
+'''
+
+enjoy
+---
 
 ## Usage
 
