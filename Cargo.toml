@@ -1,0 +1,19 @@
+[package]
+name = "looneygrep"
+version = "0.1.0"
+name = ["Richie Looney <richieandkayla@gmail.com>"]
+description = "A powerful command-line search tool with web page support and replace functionality."
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/looneyrichie/looneygrep"
+readme = "README.md"
+keywords = ["search", "grep", "cli", "replace", "web"]
+categories = ["command-line-utilities", "text-processing"]
+
+[dependencies]
+syntect = "5"
+reqwest = { version = "0.11", features = ["blocking"] }
+
+[[bin]]
+name = "lg"
+path = "src/main.rs"
