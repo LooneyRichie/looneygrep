@@ -1,7 +1,7 @@
 [package]
 name = "looneygrep"
 version = "0.1.0"
-name = ["Richie Looney <richieandkayla@gmail.com>"]
+authors = ["Richie Looney <richieandkayla@gmail.com>"]
 description = "A powerful command-line search tool with web page support and replace functionality."
 edition = "2021"
 license = "MIT OR Apache-2.0"
